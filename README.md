@@ -59,7 +59,7 @@ int main(void) {
 }
 
 ```
-![picture](EXAMPLE.JPEG)
+![picture](EXAMPLE.jpg)
 
 ### Contacts ###
 
