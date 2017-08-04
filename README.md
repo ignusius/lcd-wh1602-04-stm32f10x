@@ -23,18 +23,37 @@ Library lcd-wh1602-04-stm32f10x support Cyrillic letters.
 * D6 - PB14
 * D7 - PB15
 
+### API ###
+
+```C
+lcd44780_ClearLCD(void);  //Clear display
+
+lcd44780_SetLCDPosition(char x, char y); //Set screen possition 0-4
+
+lcd44780_ShowChar(unsigned char c); //Show char
+
+lcd44780_ShowStr(unsigned char *s); //Swow string
+
+lcd44780_init_pins(void); //Init GPIO pins
+
+lcd44780_init(void); // Init display
+
+```
+
+### Hacks ###
+lcd44780_ClearLCD() is very slow if you need clear line on screen.
+
+Solution
+```C
+lcd44780_ShowStr("                "); //Fast clear line
+```
+
 ### Example code ###
 ```C
 #include "lcd-wh1602-04.h"
 
 char buf[17];
 
-
-
-void Delay(volatile uint32_t nCount) {
-	for (; nCount != 0; nCount--)
-		;
-}
 
 int main(void) {
 
