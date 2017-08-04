@@ -22,6 +22,44 @@ Library lcd-wh1602-04-stm32f10x support Cyrillic letters.
 * D6 - PB14
 * D7 - PB15
 
+### Example code ###
+<code>
+#include "lcd-wh1602-04.h"
+
+char buf[17];
+
+
+
+void Delay(volatile uint32_t nCount) {
+	for (; nCount != 0; nCount--)
+		;
+}
+
+int main(void) {
+
+	lcd44780_init_pins();
+	lcd44780_init();
+	lcd44780_SetLCDPosition(0, 0);
+	snprintf(buf, sizeof(buf), "ABCDEFGHIJKLM!?");
+	lcd44780_ShowStr(buf);
+	lcd44780_SetLCDPosition(0, 1);
+	snprintf(buf, sizeof(buf), "NOPQRSTUVWXYZ+-");
+	lcd44780_ShowStr(buf);
+	lcd44780_SetLCDPosition(0, 2);
+	snprintf(buf, sizeof(buf), "АБВГДЕЖЗИЙКЛМНОП");
+	lcd44780_ShowStr(buf);
+	lcd44780_SetLCDPosition(0, 3);
+	snprintf(buf, sizeof(buf), "РСТУФХЦЧШЩЪЫЬЭЮЯ");
+	lcd44780_ShowStr(buf);
+	while (1) {
+
+
+
+	}
+}
+
+</code>
+
 ### Contacts ###
 
 ignusius@gmail.com
