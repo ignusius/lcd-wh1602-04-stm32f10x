@@ -1,5 +1,5 @@
-#ifndef LCD-WH1602-04_H
-#define LCD-WH1602-04_H
+#ifndef LCD_WH1602_04_H
+#define LCD_WH1602_04_H
 
 #include "stm32f10x.h" 
 #include "stm32f10x_gpio.h"
