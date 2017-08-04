@@ -1,6 +1,7 @@
 # lcd-wh1602-04-stm32f10x #
 
-<p>This library add support LCD-screens for microcontrollers STM32F10x.</p>
+This library add support LCD-screens for microcontrollers STM32F10x.
+
 Library lcd-wh1602-04-stm32f10x support Cyrillic letters.
 
 ### Tested LCDs ###
