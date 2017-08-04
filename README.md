@@ -23,7 +23,7 @@ Library lcd-wh1602-04-stm32f10x support Cyrillic letters.
 * D7 - PB15
 
 ### Example code ###
-<pre>
+```C
 #include "lcd-wh1602-04.h"
 
 char buf[17];
@@ -58,7 +58,7 @@ int main(void) {
 	}
 }
 
-</pre>
+```
 
 ### Contacts ###
 
