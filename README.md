@@ -30,7 +30,7 @@ For configure pins use header file "lcd-wh1602-04.h"
 ```C
 lcd44780_ClearLCD(void);  //Clear display
 
-lcd44780_SetLCDPosition(char x, char y); //Set screen possition 0-3
+lcd44780_SetLCDPosition(char x, char y); //Set screen possition x->0..15  y->0..3
 
 lcd44780_ShowChar(unsigned char c); //Show char
 
