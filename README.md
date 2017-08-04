@@ -23,6 +23,8 @@ Library lcd-wh1602-04-stm32f10x support Cyrillic letters.
 * D6 - PB14
 * D7 - PB15
 
+For configure pins use header file "lcd-wh1602-04.h"
+
 ### API ###
 
 ```C
